@@ -13,7 +13,7 @@ interface ProductListProps {
   }>[]
 }
 
-const ProductList = async ({ products }: ProductListProps) => {
+const ProductList = ({ products }: ProductListProps) => {
   return (
     <div className="flex overflow-x-scroll gap-4 px-5 [&::-webkit-scrollbar]:hidden">
       {products.map((product) => (
