@@ -123,13 +123,9 @@ const ProductDetails = ({ product, complementaryProducts }: ProductDetailsProps)
               <TimerIcon size={14} />
             </div>
 
-            {product.restaurant.deliveryTimeMinutes > 0 ? (
-              <p className="text-xs font-semibold">
-                {product.restaurant.deliveryTimeMinutes}min
-              </p>
-            ) : (
-              <p className="text-sm font-semibold">Grátis</p>
-            )}
+            <p className="text-xs font-semibold">
+              {product.restaurant.deliveryTimeMinutes} min
+            </p>
           </div>
         </Card>
       </div>
